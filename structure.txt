@@ -1,0 +1,100 @@
+learning-path-generator/
+│
+├── frontend/                # React App
+├── backend/                 # Node + Express API
+├── docs/                    # Proposal, diagrams, notes
+├── README.md
+
+
+
+
+
+
+
+frontend/
+│
+├── public/
+│
+├── src/
+│   ├── assets/              # images, icons
+│   ├── components/          # reusable UI
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── RoadmapCard.jsx
+│   │   ├── ProgressBar.jsx
+│   │
+│   ├── pages/               # main screens
+│   │   ├── Home.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── GeneratePath.jsx
+│   │   ├── Login.jsx
+│   │   ├── Signup.jsx
+│   │
+│   ├── services/            # API calls
+│   │   ├── api.js
+│   │   ├── authService.js
+│   │   ├── roadmapService.js
+│   │
+│   ├── context/             # global state
+│   │   ├── AuthContext.jsx
+│   │   ├── UserContext.jsx
+│   │
+│   ├── utils/               # helper functions
+│   │   ├── calculateProgress.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│
+├── package.json
+
+
+
+
+
+
+
+
+backend/
+│
+├── config/
+│   ├── db.js                # MongoDB connection
+│
+├── controllers/
+│   ├── authController.js
+│   ├── roadmapController.js
+│   ├── progressController.js
+│
+├── models/
+│   ├── User.js
+│   ├── Roadmap.js
+│   ├── Progress.js
+│
+├── routes/
+│   ├── authRoutes.js
+│   ├── roadmapRoutes.js
+│   ├── progressRoutes.js
+│
+├── middleware/
+│   ├── authMiddleware.js
+│
+├── data/                    # CORE LOGIC (IMPORTANT)
+│   ├── dsa.json
+│   ├── webdev.json
+│   ├── ai.json
+│
+├── utils/
+│   ├── generateRoadmap.js   # brain of system
+│
+├── server.js
+├── package.json
+
+
+
+
+
+Home →
+   Login/Signup →
+      Select Skill + Level →
+         Generate Roadmap →
+            Dashboard →
+               Track Progress
