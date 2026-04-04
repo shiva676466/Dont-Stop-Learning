@@ -1,0 +1,87 @@
+PUBLIC/
+Public folder is for static files (index.html, favicon for icons)
+React injects our app here
+
+
+SRC/
+Everything important inside this
+
+
+ASSETS/
+Stores: 
+    - images
+    - icons
+    - logos
+To keep UI resources seperate
+
+
+COMPONENTS/
+Reusable UI pieces
+
+Files: 
+    - Navbar.jsx        -> top navigation bar 
+    - Sidebar.jsx       -> side menu
+    - RoadmapCard.jsx   -> shows one topic/task
+    - ProgressBar.jsx   -> shows completion %
+Avoid repeating code -> reusable components
+
+
+
+PAGES/
+Full screens (routes)
+
+Files: 
+    - Home.jsx -> landing page
+    - Login.jsx -> login screen 
+    - Signup.jsx -> register screen
+    - GeneratePath.jsx -> form(skill, level)
+    - Dashboard.jsx -> shows Roadmap + progress
+
+diff between components & pages:
+    - components = small pieces
+    - pages = full screens
+
+
+
+SERVICES/
+Handles API calls to backend
+
+Files: 
+    - api.js -> base axios config
+    - authService.js -> login/Signup calls
+    - roadmapService.js -> roadmap APIs
+
+Keeps backend communication seperate from UI
+
+
+
+
+CONEXT/
+Global state (React context)
+
+Files:
+    - AuthContext.jsx -> user login state
+    - UserContext.jsx -> user data
+
+Avoid passing props everywhere
+
+
+
+UTILS/
+Helper functions
+
+Example: 
+calculateProgress.js
+- reusable logic
+
+
+
+App.jsx: 
+- Main app component
+- Handles routing (pages switching)
+
+
+
+Main.jsx: 
+- Entry point of react app
+- renders app into DOM
